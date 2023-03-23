@@ -29,16 +29,9 @@
 }
 
 * {
-     margin:0; 
+    margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
-}
- 
-/* imagem de fundo */
-.main{
-   background-image: url(../assets/images/Banner_Login.png);
-   background-repeat: none;
-   background-size: cover;
+    box-sizing: border-box;
 }
 
 body {
@@ -173,43 +166,66 @@ header .header-bottom .menu-usuarios {
     align-items: center;
 
     transition: right 0.4s;
-}    
+}
 
-/* MAIN */
+
+/* Main */
 main {
+    height:687px;
     margin-top: 60px;
-    backdrop-filter: blur(45px);
-    background-color: transparent;
+    display: flex;
+    justify-content: center;
     
-}
-
-.Login{
-    background-color: transparent;
-    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));   
-    backdrop-filter: blur(6px);
-    border: 1px solid white;
-    color: white;
-    padding: 5px 10px;
-    font-family: TitilliumWeb-Regular;
-    font-size: 16px;
-    
-}
-
-
-.banner {
-    width: 100%;
-    height: 606px;
-    padding: 40px 0;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rebeccapurple; */
-    background-image: url(../assets/images/Banner_Login\ cell.png);
-    background-size: contain;
+    background-image: url(../assets/images/Banner_Login\ cell.png);    
     background-repeat: no-repeat;
-    background-position: bottom;
 }
+
+.frm-login{
+    border: 1px solid red;  
+    height: 462px;
+    width: 335px;
+    margin-top: 78px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-title{
+    border: 1px solid blue;
+    padding-bottom: 143px;
+    
+}
+
+.frm-linha{
+    border: 2px solid red;
+    width: 273px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 20px;
+}
+
+#email{
+    width: 90%;
+    background-color: transparent;
+
+}
+
+#password{
+    width: 90%;
+    background-color: transparent;
+}
+
+.btn-logar{
+    width: 273px;
+    height: 40px;
+}
+
+
+
+
 
 
 
@@ -257,7 +273,10 @@ footer .footer-top {
     justify-content: space-between;
     height: 1530px;
 }
-
+/* apagar */
+footer .footer-top > div {
+    border: 2px solid white;
+}
 
 footer .footer-top .titulos-footer h3 {
     font-family: TitilliumWeb-Black;
@@ -345,4 +364,149 @@ footer #newsletter button {
     background-color: #F9AA01;
     font-family: TitilliumWeb-Bold;
     font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablets >= 768px*/
+@media screen and (min-width: 768px) {}
+
+/* Desktops >= 1200px*/
+@media screen and (min-width: 1200px) {
+    .layout-grid {
+        width: 100%;
+        max-width: 1200px;
+        /* border: 3px dotted yellowgreen; */
+    }
+
+    /* HEADER  */
+    header {
+        position: static;
+        height: 140px;
+    }
+
+    /* Header Top */
+    header .header-top {
+        /* block é o valor default da maioria dos elementos */
+        display: block;
+        height: 50px;
+        border-bottom: 2px solid #F9AA01;
+    }
+
+    header .header-top .contatos {
+        width: 415px;
+        display: flex;
+        justify-content: space-between;
+
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+
+        /* border: 2px solid white; */
+    }
+
+    header .header-top .contatos>div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        /* border: 1px solid yellow; */
+    }
+
+    header .header-top .midias-sociais {
+        width: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* border: 2px solid white; */
+    }
+
+    /* Esconde elementos desnecessários */
+    header .menu-hamburger,
+    header .menu-pontinhos,
+    header .header-bottom nav .phone,
+    header .header-bottom nav .email,
+    header .header-bottom nav .midias-sociais {
+        display: none;
+    }
+
+    /* Header Bottom */
+    header .header-bottom {
+        height: 90px;
+    }
+
+    header .header-bottom img.logo {
+        width: 200px;
+    }
+
+    header .header-bottom nav {
+        position: static;
+        width: 440px;
+        height: 50px;
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        /* background-color: red; */
+    }
+
+    header .header-bottom nav>a {
+        border: none;
+        font-size: 14px;
+    }
+
+    header .header-bottom nav>a:hover {
+        background-color: transparent;
+        color: #F9AA01;
+    }
+
+    header .header-bottom .menu-usuarios {
+        position: static;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 120px;
+        height: auto;
+        background-color: transparent;
+    }
+
+    /* MAIN */
+    main {
+        margin-top: 0;
+    }
+
+    /* Banner */
+    main .banner {
+        height: 722px;
+        /* alterar a imagem de fundo */
+        background-image: url(../assets/images/fundo-banner-desktop.png);
+        background-size: cover;
+        background-position: top;
+
+    }
+
+    main .banner h1 {
+        font-size: 80px;
+    }
+
+    /* Sessão de Jogos */
+    main .jogos {
+        height: 500px;
+    }
+
+    main .jogos .jogos-flex {
+        flex-direction: row;
+    }
+
+    main .jogos .jogos-flex img {
+        width: 555px;
+    }
+
 }

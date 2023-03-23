@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <header>
 
         <!-- linha de cima com a borda amarela -->
@@ -71,7 +70,7 @@
 
                     <div class="midias-sociais">
                         <a href="">
-                            <img src="./assets/icons/facebook.svg" alt="Imagem link do Facebook da empresa Gamer">
+                            <img src="assets/icons/facebbok.png" alt="Imagem link do Facebook da empresa Gamer">
                         </a>
                         <a href="">
                             <img src="./assets/icons/linkedin.svg" alt="Imagem link do Linkedin da empresa Gamer">
@@ -101,21 +100,45 @@
         </div>
     </header>
 
-    <main>
-      <section class="banner">       
-      </section>                     
-   </main>
 
-   <div class="Login">
-    
-   </div>
+
+
+    <!-- FORMULÁRIO DE LOGIN -->
+    <main>
+        <form action="" class="frm-login">
+
+            <div class="login-title">
+                <hr class="login-line">
+                <h1>Login</h1>
+            </div>
+
+            <div class="frm-linha">
+                <img src="./assets/icons/bonequiinho.png"  class="img-email" alt="ícone de usuário">
+                <input type="email" id="email" placeholder="Digite seu e-mail:">
+            </div>
+
+            <div class="frm-linha">
+                <img src="./assets/icons/chave.png" alt="ícone de chave">
+                <input type="password" id="password" placeholder="Digite sua senha:">
+            </div>
+
+            <div>
+                <button class="btn-logar">Logar</button>
+            </div>
+            
+        </form>
+    </main>
+
+
     <footer>
         <div class="layout-grid footer-top">
-            
+
             <div id="sobre">
-                <img src="./assets/images/logotipo-gamer.svg" alt="Logotipo, imagem com texto gamer e um controle de vídeo game ao centro">
-                
-                <p>Nosso sucesso na criação de soluções de negócios se deve em grande parte à nossa equipe talentosa e altamente comprometida.</p>
+                <img src="./assets/images/logotipo-gamer.svg"
+                    alt="Logotipo, imagem com texto gamer e um controle de vídeo game ao centro">
+
+                <p>Nosso sucesso na criação de soluções de negócios se deve em grande parte à nossa equipe talentosa e
+                    altamente comprometida.</p>
 
                 <!-- exportar as imagens do figma! -->
                 <div id="midias-sociais-footer">
@@ -192,9 +215,9 @@
                     <button>Enviar</button>
                 </form>
             </div>
-            
+
         </div> <!-- fim da footer-top -->
-        
+
 
         <div class="layout-grid footer-bottom">
             <p id="rights">&copy;Todos os diretos reservados</p>
@@ -215,6 +238,10 @@
             document.getElementById("menu-usuarios").classList.toggle("mostrar-usuarios");
         }
     </script>
+
+
+
+
 </body>
 
 </html>
