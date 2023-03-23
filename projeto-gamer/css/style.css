@@ -268,10 +268,7 @@ footer .footer-top {
     justify-content: space-between;
     height: 1530px;
 }
-/* apagar */
-footer .footer-top > div {
-    border: 2px solid white;
-}
+
 
 footer .footer-top .titulos-footer h3 {
     font-family: TitilliumWeb-Black;

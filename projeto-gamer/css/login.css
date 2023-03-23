@@ -181,9 +181,12 @@ main {
 }
 
 .frm-login{
-    border: 1px solid red;  
+    /* border: 1px solid red;   */
     height: 462px;
     width: 335px;
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.6) , rgba(60, 3, 65, .3));
+    backdrop-filter: blur(10px);
+
     margin-top: 78px;
     display: flex;
     flex-direction: column;
@@ -192,35 +195,65 @@ main {
 }
 
 .login-title{
-    border: 1px solid blue;
-    padding-bottom: 143px;
+    /* border: 1px solid blue; */
+    padding-bottom: 91px;
+  
     
 }
 
+.login-title h1{
+    font-family: TitilliumWeb-Black;
+}
+
+.login-title hr{
+    border: 1px solid rgb(249, 170, 1);
+   
+
+}
+
 .frm-linha{
-    border: 2px solid red;
+    /* border: 2px solid white; */
     width: 273px;
     height: 40px;
     display: flex;
     justify-content: space-between;
     padding: 5px;
-    margin: 20px;
+     margin: 20px; 
+     background-image: linear-gradient(to right , rgba(255, 255, 255, 0.6) , rgba(192, 192, 192, 0.1));
+     border-radius: 8px;
+     border: 1px solid white;
+
 }
 
 #email{
     width: 90%;
     background-color: transparent;
+    border: none;
+    
 
+}
+
+input::placeholder{
+     /* font-family:TitilliumWeb-Black;  */
+    color: white;
+    border-radius: 8px;
 }
 
 #password{
     width: 90%;
     background-color: transparent;
+    border: none;
 }
 
 .btn-logar{
     width: 273px;
     height: 40px;
+    background-color: #F9AA01;
+    border-radius: 8px;
+}
+
+input{
+    outline: none;
 }
 
 
@@ -235,11 +268,12 @@ main {
 /* Footer */
 footer {
     padding-top: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
     box-shadow: inset 0 30px 60px rgba(0, 0, 0, 1);
     background-image: url(../assets/images/fundo-footer-mobile.png);
     background-position: top;
     background-size: contain;
+    
 }
 
 footer #sobre {
@@ -275,7 +309,7 @@ footer .footer-top {
 }
 /* apagar */
 footer .footer-top > div {
-    border: 2px solid white;
+    /* border: 2px solid white; */
 }
 
 footer .footer-top .titulos-footer h3 {
@@ -346,7 +380,7 @@ footer #newsletter input {
     background-color: transparent;
     background-image: linear-gradient(to right bottom, rgba(239, 239, 239, .6), rgba(239, 239, 239, .1));
     backdrop-filter: blur(6px);
-    border: 1px solid white;
+    /* border: 1px solid white; */
     color: white;
     padding: 5px 10px;
     font-family: TitilliumWeb-Regular;
@@ -367,7 +401,26 @@ footer #newsletter button {
 }
 
 
+#botaovoltar {
+    position: relative;
+    left: 289px;
+    bottom: -11px;
+    
+}
 
+#rights{ 
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+
+
+.footer-bottom{
+    display: flex;
+    
+}
 
 
 
