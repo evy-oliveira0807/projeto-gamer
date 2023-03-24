@@ -168,19 +168,25 @@ header .header-bottom .menu-usuarios {
     transition: right 0.4s;
 }
 
+/* FORMULARIO DE EQUIPES */
+
 
 /* Main */
 main {
-    height:687px;
+    width: 374px;
+    height: 1231px;
     margin-top: 60px;
     display: flex;
     justify-content: center;
     
-    background-image: url(../assets/images/Banner_Login\ cell.png);    
+    background-image: url(../assets/images/Retangulo_com_blur.png);    
     background-repeat: no-repeat;
 }
 
-.frm-login{
+
+
+
+.frm-equipes{
     /* border: 1px solid red;   */
     height: 462px;
     width: 335px;
@@ -194,18 +200,18 @@ main {
     justify-content: center;
 }
 
-.login-title{
+.equipes-title{
     /* border: 1px solid blue; */
     padding-bottom: 91px;
   
     
 }
 
-.login-title h1{
+.equipes-title h1{
     font-family: TitilliumWeb-Black;
 }
 
-.login-title hr{
+.equipes-title hr{
     border: 1px solid rgb(249, 170, 1);
    
 
@@ -230,8 +236,24 @@ main {
     background-color: transparent;
     border: none;
     
-
 }
+
+.frm-img{
+    width: 124px;
+    height: 40px;
+   background-color: white;
+   
+}
+
+
+.frm-img p{
+    /* width: 104px;
+    height: 20px; */
+    font-family:TitilliumWeb-Bold ;
+    color: black;
+}
+
+
 
 input::placeholder{
      /* font-family:TitilliumWeb-Black;  */
@@ -255,13 +277,6 @@ input::placeholder{
 input{
     outline: none;
 }
-
-
-
-
-
-
-
 
 
 
@@ -417,146 +432,4 @@ footer #newsletter button {
 .footer-bottom{
     display: flex;
     
-}
-
-
-
-
-
-
-
-
-
-/* Tablets >= 768px*/
-@media screen and (min-width: 768px) {}
-
-/* Desktops >= 1200px*/
-@media screen and (min-width: 1200px) {
-    .layout-grid {
-        width: 100%;
-        max-width: 1200px;
-        /* border: 3px dotted yellowgreen; */
-    }
-
-    /* HEADER  */
-    header {
-        position: static;
-        height: 140px;
-    }
-
-    /* Header Top */
-    header .header-top {
-        /* block é o valor default da maioria dos elementos */
-        display: block;
-        height: 50px;
-        border-bottom: 2px solid #F9AA01;
-    }
-
-    header .header-top .contatos {
-        width: 415px;
-        display: flex;
-        justify-content: space-between;
-
-        font-family: Inter;
-        font-size: 14px;
-        font-weight: 400;
-
-        /* border: 2px solid white; */
-    }
-
-    header .header-top .contatos>div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 10px;
-        /* border: 1px solid yellow; */
-    }
-
-    header .header-top .midias-sociais {
-        width: 120px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        /* border: 2px solid white; */
-    }
-
-    /* Esconde elementos desnecessários */
-    header .menu-hamburger,
-    header .menu-pontinhos,
-    header .header-bottom nav .phone,
-    header .header-bottom nav .email,
-    header .header-bottom nav .midias-sociais {
-        display: none;
-    }
-
-    /* Header Bottom */
-    header .header-bottom {
-        height: 90px;
-    }
-
-    header .header-bottom img.logo {
-        width: 200px;
-    }
-
-    header .header-bottom nav {
-        position: static;
-        width: 440px;
-        height: 50px;
-        padding: 0;
-        flex-direction: row;
-        align-items: center;
-        /* background-color: red; */
-    }
-
-    header .header-bottom nav>a {
-        border: none;
-        font-size: 14px;
-    }
-
-    header .header-bottom nav>a:hover {
-        background-color: transparent;
-        color: #F9AA01;
-    }
-
-    header .header-bottom .menu-usuarios {
-        position: static;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 120px;
-        height: auto;
-        background-color: transparent;
-    }
-
-    /* MAIN */
-    main {
-        margin-top: 0;
-    }
-
-    /* Banner */
-    main .banner {
-        height: 722px;
-        /* alterar a imagem de fundo */
-        background-image: url(../assets/images/fundo-banner-desktop.png);
-        background-size: cover;
-        background-position: top;
-
-    }
-
-    main .banner h1 {
-        font-size: 80px;
-    }
-
-    /* Sessão de Jogos */
-    main .jogos {
-        height: 500px;
-    }
-
-    main .jogos .jogos-flex {
-        flex-direction: row;
-    }
-
-    main .jogos .jogos-flex img {
-        width: 555px;
-    }
-
 }
