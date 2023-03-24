@@ -227,7 +227,7 @@ main {
      margin: 20px; 
      background-image: linear-gradient(to right , rgba(255, 255, 255, 0.6) , rgba(192, 192, 192, 0.1));
      border-radius: 8px;
-     border: 1px solid white;
+     /* border: 1px solid white; */
 
 }
 
@@ -240,19 +240,22 @@ main {
 
 
 
-/* 
-.frm-img p{
+
+.frm-linha p{
     
     font-family:TitilliumWeb-Bold ;
-    color: black;
-} */
+    color: white;
+}
 
-
+input{
+    background-color: transparent;
+}
 
 input::placeholder{
      /* font-family:TitilliumWeb-Black;  */
-    color: white;
+    /* color: white; */
     border-radius: 8px;
+
 }
 
 #password{
@@ -262,6 +265,7 @@ input::placeholder{
 }
 
 .btn-cadastro{
+    font-family:  TitilliumWeb-Regular;
     width: 273px;
     height: 40px;
     background-color: #F9AA01;
